@@ -16,10 +16,10 @@ This is the project involving the development of a Self Balancing Robot. It uses
 The motors used are the stepper motors hence the relationship between the number of steps and speed is non-linear in nature, hence PID algorithm can not be used unless the linearization is performed.
 
 <br>
-$$ Speed = {157 \over 6400*(40+20n)*10^(-6)} $$
+$` Speed = {157 \over 6400*(40+20n)*10^(-6)} `$
 Here the speed is calculated in mm/sec, and **n** is the number of steps.
 <br>
-$$ n = {(157*10^(6) /over 5400*Speed*20) - (40 /over 20)} $$
+$` n = {(157*10^(6) /over 5400*Speed*20) - (40 /over 20)} `$
 <br>
 
 To mitigate the problem of nonlinear-system, the PID algoritm is implemented on **Speed** rather than the number of steps **n**.
