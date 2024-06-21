@@ -1,0 +1,9 @@
+MotorP
+12 - INA
+14 - STP
+27 - DIR
+
+MotorN
+33 - INA
+25 - STP
+26 - DIR
